@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDesc__",
+  "version": "0.0.0",
+  "default_locale": "ja",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage",
+    "<all_urls>"
+  ],
+
+  "icons": {
+    "16": "icon/icon16x16.png",
+    "128": "icon/icon48x48.png",
+    "128": "icon/icon128x128.png"
+  },
+
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+
+  "options_ui": {
+    "page": "option.html",
+    "chrome_style": true
+  }
+}
